@@ -1,3 +1,4 @@
+//they recommend that you declare properties as read-only (val) unless they need to be changed after an instance of the class is created.
 class Contact(val id: Int, var email: String){
     fun printId() {
         println(id)
