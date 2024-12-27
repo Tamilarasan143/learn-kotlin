@@ -14,7 +14,7 @@ fun main(){
     val thirdUser = User("Max", 2)
 
 // Compares user to second user
-    println("user == secondUser: ${user == secondUser}")
+    println("user == secondUser: ${user.equals(secondUser)}")
 // user == secondUser: true
 
 // Compares user to third user
