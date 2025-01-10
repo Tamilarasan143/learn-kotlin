@@ -2,6 +2,10 @@ fun main(){
     //ranges, you can create a for loop that iterates over numbers 1 to 5 and prints the number each time.
     var i =10
     var sum = 0
+    val text = "tamil"
+    for(letter in text.reversed()){
+        println(letter)
+    }
     for (number in 1..5) {
         // number is the iterator and 1..5 is the range
         println(number)
