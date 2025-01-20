@@ -25,8 +25,9 @@ class NormalPerson : PersonStyle, AnotherPersonStyle {
     override fun work() {
         println("")
     }
-
+ // As per the rule we implement two interface and that interfaces have same name methods we have to override it
     override fun Eat() {
+        // we have to use generic to mention which interface Eat() method we are use . Without generic, it throws error
         super<PersonStyle>.Eat()
         super<AnotherPersonStyle>.Eat()
     }
