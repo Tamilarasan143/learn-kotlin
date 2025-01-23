@@ -6,16 +6,17 @@ fun main(args: Array<String>) {
 
 //    var person = MyPerson()   // Not allowed. You cannot create instance of abstract class
 
-    var person = Indian()       // Allowed. Abstract Super class reference variable
-    // pointing to child class object.
-    person.name = "Steve"
+    val person = Indian()       // Allowed. Abstract Super class reference variable
+//    // pointing to child class object.
+//    person.name = "Steve"
+    println(person.name)
     person.eat()
     person.goToSchool()
 }
 
 abstract class MyPerson {     // you cannot create instance of abstract class
 
-    abstract var name: String
+     var name: String = "roger" // abstract properties are 'open' by default
 
     abstract fun eat()      // abstract properties are 'open' by default
 
@@ -26,7 +27,7 @@ abstract class MyPerson {     // you cannot create instance of abstract class
 
 class Indian: MyPerson() {
 
-    override var name: String = "dummy_indian_name"
+     var superName: String = super.name
 
     override fun eat() {
         // Our own code
